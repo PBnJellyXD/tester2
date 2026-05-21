@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+	<html lang='en'>
+	
+		<head>
+		
+			<title> Snow Hut Calendar </title>
+			
+			<meta charset='utf-8'>
+			<meta name='description' content='Snow Cone Company Template'>
+			<meta name='keywords' content='snow cone'>
+			<meta name='author' content='Marcelo Aparecido'>
+			<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+			
+			<link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap" rel="stylesheet">
+			
+			<style>
+			
+				*{
+					margin: 0px;
+					}
+					
+				header{
+					display: flex;
+					}
+					
+				img{
+					height: 250px;
+					width: 250px;
+					}
+					
+				#logo{
+					height: 250px;
+					width: 19%;
+					background-color: #59a7f6;
+					}
+					
+				#logobutton{
+					height: 250px;
+					width: 100%;
+					background-color: #59a7f6;
+					border: none;
+					cursor: pointer;
+					}
+					
+				img{
+					height: 250px;
+					width: 100%;
+					border-radius: 100px;
+					}
+					
+				#titlediv{
+					height: 250px;
+					width: 40.5%;
+					background-color: #59a7f6;
+					align-items: center;
+					justify-content: center;
+					display: flex;
+					}
+					
+				#title{
+					font-size: 72px;
+					font-family: 'BBH Sans Hegarty', sans-serif;
+					color: #88e7fa;
+					}
+					
+				#buttons{
+					height: 250px;
+					width: 40.5%;
+					background-color: #59a7f6;
+					align-items: center;
+					justify-content: center;
+					display: flex;
+					}
+					
+				#login{
+					height: 75px;
+					width: 150px;
+					margin: 10px;
+					background-color: #88e7fa;
+					border: solid 5px #ff0070;
+					cursor: pointer;
+					font-family: 'BBH Sans Hegarty', sans-serif;
+					font-size: 20px;
+					transition: transform 0.2 ease;
+					color: #ff0070;
+					border-radius: 15px;
+					}
+					
+				#login:hover{
+					background-color: #37D9FA;
+					transition-duration: 200ms;
+					}
+					
+				nav{
+					height: 50px;
+					width: 100%;
+					background-color: #88e7fa;
+					align-items: center;
+					justify-content: center;
+					display: flex;
+					position: sticky;
+					top: 0px;
+					}
+					
+				body{
+					background-color: #59a7f6;
+					}
+					
+				#link{
+					text-decoration: none;
+					font-size: 25px;
+					margin: 30px;
+					color: #ff0070;
+					font-family: 'BBH Sans Hegarty', sans-serif;
+					transition: transform 0.2 ease;
+					}
+					
+				#link:hover{
+					color: #2076a4;
+					transition-duration: 200ms;
+					}
+					
+				h1{
+					color: #ff0070;
+					font-family: 'BBH Sans Hegarty', sans-serif;
+					font-size: 72px;
+					align-items: center;
+					justify-content: center;
+					display: flex;
+					margin: 40px;
+					}
+					
+				h2{
+					color: #ff0070;
+					font-family: 'BBH Sans Hegarty', sans-serif;
+					font-size: 50px;
+					align-items: center;
+					justify-content: center;
+					display: flex;
+					margin: 40px;
+					}
+					
+				table, tr, th, td{
+					border: solid 2px #ff0070;
+					border-collapse: collapse;
+					}
+					
+				th, td{
+					padding: 16px;
+					text-align: center;
+					}
+					
+				td, th{
+					height: 50px;
+					width: 100px;
+					font-family: 'BBH Sans Hegarty', sans-serif;
+					}
+					
+				#toprow{
+					background-color: #c70056;
+					color: #88e7fa;
+					font-family: 'BBH Sans Hegarty', sans-serif;
+					font-size: 30px;
+					}
+					
+				.dates{
+					background-color: lightblue;
+					}
+					
+				#taken{
+					background-color: #ffea00;
+					}
+					
+				#schedule{
+					align-items: center;
+					justify-content: center;
+					display: flex;
+					margin-bottom: 75px;
+					}
+					
+				input, label{
+					font-size: 30px;
+					color: #ff0070;
+					font-family: 'BBH Sans Hegarty', sans-serif;
+					}
+					
+				input{
+					background-color: #88e7fa;
+					border: solid 2px #ff0070;
+					}
+					
+				#facebook, #instagram, #snapchat, #tiktok, #youtube, #x{
+					height: 65px;
+					width: 65px;
+					margin: 10px;
+					border-radius: 65px;
+					transition: transform 0.2 ease;
+					}
+					
+				#facebook{
+					background: url(images/TBBfacebooklogo.png)no-repeat;
+					background-size: cover;
+					}
+					
+				#instagram{
+					background: url(images/TBBinstagramlogo.png)no-repeat;
+					background-size: cover;
+					}
+					
+				#snapchat{
+					background: url(images/TBBsnapchatlogo.png)no-repeat;
+					background-size: cover;
+					}
+					
+				#tiktok{
+					background: url(images/TBBtiktoklogo.png)no-repeat;
+					background-size: cover;
+					}
+					
+				#youtube{
+					background: url(images/TBByoutubelogo.png)no-repeat;
+					background-size: cover;
+					}
+					
+				#x{
+					background: url(images/TBORxlogo.png)no-repeat;
+					background-size: cover;
+					}
+					
+				#facebook:hover{
+					background: url(images/TBORfacebooklogo.png)no-repeat;
+					background-size: cover;
+					transition-duration: 200ms;
+					}
+					
+				#instagram:hover{
+					background: url(images/TBORinstagramlogo.png)no-repeat;
+					background-size: cover;
+					transition-duration: 200ms;
+					}
+					
+				#snapchat:hover{
+					background: url(images/TBORsnapchatlogo.png)no-repeat;
+					background-size: cover;
+					transition-duration: 200ms;
+					}
+					
+				#tiktok:hover{
+					background: url(images/TBORtiktoklogo.png)no-repeat;
+					background-size: cover;
+					transition-duration: 200ms;
+					}
+					
+				#youtube:hover{
+					background: url(images/TBORyoutubelogo.png)no-repeat;
+					background-size: cover;
+					transition-duration: 200ms;
+					}
+					
+				#x:hover{
+					background: url(images/TBWxlogo.png)no-repeat;
+					background-size: cover;
+					transition-duration: 200ms;
+					}
+					
+				footer{
+					height: 85;
+					width: 100%;
+					border-top: solid 5px #88e7fa;
+					background-color: #fff;
+					display: flex;
+					}
+					
+			</style>
+			
+		</head>
+		
+		<body>
+		
+			<header> 
+			
+				<div id='logo'><a href='index.html'><button id='logobutton'><img src='images/snowconecompanylogo.png' alt='Snow Cone Company Logo'></a></div>
+				
+				<div id='titlediv'><p id='title'> SNOW HUT </p></div>
+				
+				<div id='buttons'> <button id='login'> Sign Up </button> <button id='login'> Log In </button></div>
+				
+			</header>
+			
+			<nav>
+			
+				<a id='link' href='menu.html'> Menu </a>
+				<a id='link' href='calendar.html'> Calendar </a>
+				<a id='link' href='contactus.html'> Contact Us </a>
+				
+			</nav>
+			
+			<main>
+			
+				<h1> March 2026 </h1>
+			
+					<center><table class='calendar' style='border: solid 5px #ff0070;'>
+				
+						<tr id='toprow'>
+						
+							<th> Su </th>
+							<th> Mo </th>
+							<th> Tu </th>
+							<th> We </th>
+							<th> Th </th>
+							<th> Fr </th>
+							<th> Sa </th>
+							
+						</tr>
+						
+						<tr class='dates'>
+						
+							<td> 1 </td>
+							<td> 2 </td>
+							<td> 3 </td>
+							<td> 4 </td>
+							<td id='taken'> 5 <br> School Event <br> 2:45 PM </td>
+							<td> 6 </td>
+							<td> 7 </td>
+						
+						</tr>
+						
+						<tr class='dates'>
+						
+							<td> 8 </td>
+							<td> 9 </td>
+							<td id='taken'> 10 <br> Birthday Party <br> 5:00 PM </td>
+							<td> 11 </td>
+							<td> 12 </td>
+							<td> 13 </td>
+							<td> 14 </td>
+						
+						</tr>
+						
+						<tr class='dates'>
+						
+							<td> 15 </td>
+							<td> 16 </td>
+							<td> 17 </td>
+							<td> 18 </td>
+							<td> 19 </td>
+							<td> 20 </td>
+							<td> 21 </td>
+							
+						</tr>
+						
+						<tr class='dates'>
+						
+							<td> 22 </td>
+							<td id='taken'> 23 <br> Fundraiser <br> 6:30 PM </td>
+							<td> 24 </td>
+							<td> 25 </td>
+							<td> 26 </td>
+							<td id='taken'> 27 <br> Birthday Party <br> 4:00 PM </td>
+							<td> 28 </td>
+							
+						</tr>
+						
+						<tr class='dates'>
+						
+							<td> 29 </td>
+							<td> 30 </td>
+							<td> 31 </td>
+							<td> &nbsp; </td>
+							<td> &nbsp; </td>
+							<td> &nbsp; </td>
+							<td> &nbsp; </td>
+							
+						</tr>
+						
+					</table></center>
+					
+						<h2> Schedule Now </h2>
+						
+					<div id='schedule'>
+						
+						<form>
+						<label> Name: </label>
+						<input type='text' required='required' name='name' id='input'>
+						<br><br>
+						<label> Email: </label>
+						<input type='text' required='required' name='email' id='input'>
+						<br><br>
+						<label> Choose Date &amp; Time: </label>
+						<input type='datetime-local' required='required' name='date' id='input'>
+						<br><br>
+						<input type='submit' name='submit' id='input'>
+						</form>
+						
+					</div>
+				
+			</main>
+			
+			<footer>
+				
+				<a href='#'><div id='facebook'></div></a>
+				<a href='#'><div id='instagram'></div></a>
+				<a href='#'><div id='snapchat'></div></a>
+				<a href='#'><div id='tiktok'></div></a>
+				<a href='#'><div id='youtube'></div></a>
+				<a href='#'><div id='x'></div></a>
+				
+			</footer>
+			
+		</body>
+		
+	</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+	<html lang='en'>
+	
+		<head>
+		
+			<title> Snow Hut Homepage  </title>
+			
+			<meta charset='utf-8'>
+			<meta name='description' content='Snow Cone Company Template'>
+			<meta name='keywords' content='snow cone'>
+			<meta name='author' content='Marcelo Aparecido'>
+			<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+			<link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap" rel="stylesheet">
+			
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			
+			<style>
+			
+				*{
+					margin: 0px;
+					}
+					
+				header{
+					display: flex;
+					}
+					
+				img{
+					height: 250px;
+					width: 250px;
+					}
+					
+				#logodiv{
+					height: 250px;
+					width: 19%;
+					background-color: #59a7f6;
+					}
+					
+				#logobutton{
+					height: 250px;
+					width: 100%;
+					background-color: #59a7f6;
+					border: none;
+					cursor: pointer;
+					}
+					
+				#logo{
+					height: 250px;
+					width: 100%;
+					border-radius: 100px;
+					}
+					
+				#titlediv{
+					height: 250px;
+					width: 40.5%;
+					background-color: #59a7f6;
+					align-items: center;
+					justify-content: center;
+					display: flex;
+					}
+					
+				#title{
+					font-size: 72px;
+					font-family: 'BBH Sans Hegarty', sans-serif;
+					color: #88e7fa;
+					}
+					
+				#buttons{
+					height: 250px;
+					width: 40.5%;
+					background-color: #59a7f6;
+					align-items: center;
+					justify-content: center;
+					display: flex;
+					}
+					
+				#login{
+					height: 75px;
+					width: 150px;
+					margin: 10px;
+					background-color: #88e7fa;
+					border: solid 5px #ff0070;
+					cursor: pointer;
+					font-size: 20px;
+					font-family: 'BBH Sans Hegarty', sans-serif;
+					transition: transform 0.2 ease;
+					color: #ff0070;
+					border-radius: 15px;
+					}
+					
+				#login:hover{
+					background-color: #37D9FA;
+					transition-duration: 200ms;
+					}
+					
+				nav{
+					height: 50px;
+					width: 100%;
+					background-color: #88e7fa;
+					align-items: center;
+					justify-content: center;
+					display: flex;
+					position: sticky;
+					top: 0px;
+					}
+					
+				#link{
+					text-decoration: none;
+					font-size: 25px;
+					margin: 30px;
+					color: #ff0070;
+					font-family: 'BBH Sans Hegarty', sans-serif;
+					transition: transform 0.2 ease;
+					}
+					
+				#link:hover{
+					color: #2076a4;
+					transition-duration: 200ms;
+					}
+					
+				#row1, #row2, #row3{
+					display: flex;
+					}
+					
+				#div1left, #div2right, #div3left{
+					height: 350px;
+					width: 60%;
+					align-items: center;
+					justify-content: center;
+					display: flex;
+					background-color: #59a7f6;
+					}
+					
+				#snowcone1, #questionmarks, #snowcones2{
+					height: 80%;
+					width: 94%;
+					border-radius: 15px;
+					}
+					
+				#div1right, #div3right{
+					height: 350px;
+					width: 40%;
+					background-color: #81BCF7;
+					border-left: solid 5px #88e7fa;
+					}
+					
+				h1{
+					color: #ff0070;
+					align-items: center;
+					justify-content: center;
+					display: flex;
+					font-family: 'BBH Sans Hegarty', sans-serif;
+					padding: 20px;
+					}
+					
+				#menutext, #contacttext, #calendartext{
+					font-size: 24px;
+					color: #88e7fa;
+					align-items: center;
+					justify-content: center;
+					display: flex;
+					font-family: 'BBH Sans Hegarty', sans-serif;
+					padding-bottom: 50px;
+					}
+					
+				#menubutton, #contactbutton, #calendarbutton{
+					height: 125px;
+					width: 125px;
+					color: #FF0070;
+					background-color: #88e7fa;
+					font-size: 75px;
+					font-family: 'BBH Sans Hegarty', sans-serif;
+					border: double 15px #FF0070;
+					border-radius: 125px;
+					align-items: center;
+					justify-content: center;
+					display; flex;
+					transition: transform 0.2 ease;
+					}
+					
+				#menubutton:hover{
+					cursor: pointer;
+					background-color: #37D9FA;
+					transition-duration: 200ms;
+					}
+					
+				#contactbutton:hover{
+					cursor: pointer;
+					background-color: #37D9FA;
+					transition-duration: 200ms;
+					}
+					
+				#calendarbutton:hover{
+					cursor: pointer;
+					background-color: #37D9FA;
+					transition-duration: 200ms;
+					}
+					
+				#div2left{
+					height: 350px;
+					width: 40%;
+					background-color: #81BCF7;
+					border-right: solid 5px #88e7fa;
+					}
+					
+				#questions{
+					color: #ff0070;
+					align-items: center;
+					justify-content: center;
+					display: flex;
+					font-family: 'BBH Sans Hegarty', sans-serif;
+					font-size: 26px;
+					padding: 20px;
+					}
+					
+				#row2, #row3{
+					border-top: solid 5px #88e7fa;
+					}
+					
+				#facebook, #instagram, #snapchat, #tiktok, #youtube, #x{
+					height: 65px;
+					width: 65px;
+					margin: 10px;
+					border-radius: 65px;
+					transition: transform 0.2 ease;
+					}
+					
+				#facebook{
+					background: url(images/TBBfacebooklogo.png)no-repeat;
+					background-size: cover;
+					}
+					
+				#instagram{
+					background: url(images/TBBinstagramlogo.png)no-repeat;
+					background-size: cover;
+					}
+					
+				#snapchat{
+					background: url(images/TBBsnapchatlogo.png)no-repeat;
+					background-size: cover;
+					}
+					
+				#tiktok{
+					background: url(images/TBBtiktoklogo.png)no-repeat;
+					background-size: cover;
+					}
+					
+				#youtube{
+					background: url(images/TBByoutubelogo.png)no-repeat;
+					background-size: cover;
+					}
+					
+				#x{
+					background: url(images/TBORxlogo.png)no-repeat;
+					background-size: cover;
+					}
+					
+				#facebook:hover{
+					background: url(images/TBORfacebooklogo.png)no-repeat;
+					background-size: cover;
+					transition-duration: 200ms;
+					}
+					
+				#instagram:hover{
+					background: url(images/TBORinstagramlogo.png)no-repeat;
+					background-size: cover;
+					transition-duration: 200ms;
+					}
+					
+				#snapchat:hover{
+					background: url(images/TBORsnapchatlogo.png)no-repeat;
+					background-size: cover;
+					transition-duration: 200ms;
+					}
+					
+				#tiktok:hover{
+					background: url(images/TBORtiktoklogo.png)no-repeat;
+					background-size: cover;
+					transition-duration: 200ms;
+					}
+					
+				#youtube:hover{
+					background: url(images/TBORyoutubelogo.png)no-repeat;
+					background-size: cover;
+					transition-duration: 200ms;
+					}
+					
+				#x:hover{
+					background: url(images/TBWxlogo.png)no-repeat;
+					background-size: cover;
+					transition-duration: 200ms;
+					}
+					
+				footer{
+					height: 85;
+					width: 100%;
+					border-top: solid 5px #88e7fa;
+					background-color: #fff;
+					display: flex;
+					}
+					
+			</style>
+			
+		</head>
+		
+		<body>
+		
+			<header> 
+			
+				<div id='logodiv'><a href='index.html'><button id='logobutton'><img id='logo' src='images/snowconecompanylogo.png' alt='Snow Cone Company Logo'></a></div>
+				
+				<div id='titlediv'><p id='title'> SNOW HUT </p></div>
+				
+				<div id='buttons'> <button id='login'> Sign Up </button> <button id='login'> Log In </button></div>
+				
+			</header>
+			
+			<nav>
+			
+				<a id='link' href='menu.html'> Menu </a>
+				<a id='link' href='calendar.html'> Calendar </a>
+				<a id='link' href='contactus.html'> Contact Us </a>
+				
+			</nav>
+			
+			<main>
+			
+				<section id='row1'>
+				
+					<div id='div1left'>
+					
+						<img id='snowcone1' src='images/snowcone1.jpg' alt='Picture of Snow Cones'>
+					
+					</div>
+				
+					<div id='div1right'>
+				
+						<h1> Lots of amazing flavors! </h1>
+						
+						<p id='menutext'> Click this button to access our Menu. </p>
+						
+						<center><a href='menu.html'><button id='menubutton'> ! </button></a></center>
+					
+					</div>
+					
+				</section>
+				
+				<section id='row2'>
+				
+					<div id='div2left'>
+						
+						<h1 id='questions'> Questions? Concerns? Ask away! </h1>
+						
+						<p id='contacttext'> Click below to contact us. </p>
+						
+						<center><a href='contactus.html'><button id='contactbutton'> ? </button></a></center>
+						
+					</div>
+					
+					<div id='div2right'>
+					
+						<img id='questionmarks' src='images/questionmarks.webp' alt='Question Marks'>
+						
+					</div>
+					
+				</section>
+				
+				<section id='row3'>
+				
+					<div id='div3left'>
+					
+						<img id='snowcones2' src='images/snowcone2.jpg' alt='Picture of Snow Cone'>
+					
+					</div>
+					
+					<div id='div3right'>
+					
+						<h1 id='book'> Book an event today! </h1>
+						
+						<p id='calendartext'> Click here to access our calendar. </p>
+						
+						<center><a href='calendar.html'><button id='calendarbutton'><i style='color: #ff0070;' class="fa fa-calendar" aria-hidden="true"></i></a><center>
+						
+					</div>
+				
+			</main>
+			
+			<footer>
+				
+				<a href='#'><div id='facebook'></div></a>
+				<a href='#'><div id='instagram'></div></a>
+				<a href='#'><div id='snapchat'></div></a>
+				<a href='#'><div id='tiktok'></div></a>
+				<a href='#'><div id='youtube'></div></a>
+				<a href='#'><div id='x'></div></a>
+				
+			</footer>
+			
+		</body>
+		
+	</html>
